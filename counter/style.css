@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: cursive;
+}
+
+button{
+    padding: 10px 50px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    box-shadow: 5px 5px 15px #0000003f;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+button:active{
+    transform: translatey(10px);
+    box-shadow: none;
+}
+
+#addition{
+    background-color: orangered;
+    color: white;
+}
+
+#reset{
+    background-color: yellow;
+}
+
+#substraction{
+    background-color: green;
+    color: #ffffff;
+}

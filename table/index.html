@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #2b1055, #7597de);
+            color: white;
+            margin: 0;
+        }
+
+        /* Glassmorphism Container */
+        .container {
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        /* Input Field */
+        input {
+            padding: 12px;
+            font-size: 18px;
+            width: 90%;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        input:focus {
+            border: 1px solid #ffcc00;
+            box-shadow: 0px 0px 10px rgba(255, 204, 0, 0.8);
+        }
+
+        /* Button Styling */
+        button {
+            padding: 12px 18px;
+            font-size: 18px;
+            color: white;
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #ff6600, #ffcc00);
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px rgba(255, 204, 0, 0.7);
+        }
+
+        /* Table Result Section */
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Multiplication Table Generator</h2>
+        <input type="number" id="tableInput" placeholder="Enter a number">
+        <button onclick="generateTable()">Generate Table</button>
+        <div class="result"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
